@@ -2,17 +2,17 @@
     margin: 0;
     box-sizing: border-box;
 }
+@media (max-width: 768px){
+
+
 body{
-    font-family: 'Lobster', cursive;
+   
     padding: 90px 20px 0;
 }
+}
 .header{
-    background-color: #6D67E4;
-    height: 80px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
+    height: 60px;
+    
 }
 .nav{
     display: flex;
@@ -25,28 +25,58 @@ body{
     text-decoration: none;
 }
 .logo{
-    font-size: 30px;
-    font-weight: bold;
-    padding: 0 40px;
-    line-height: 80px;
+    font-size: 25px;
+    padding: 0 20px;
+    line-height: 60px;
 }
 .nav-menu{
-    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-right: 40px;
-    list-style: none;
+    background-color: #2D033B;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width:100%;
+    padding: 20px 0;
+    height: calc(100%-600px);
+    overflow: -y:auto;
+    left: 100%;
+    transition: 0.3s;
+    
 }
 .nav-menu-item{
-    font-size: 18px;
-    margin: 0 10px;
-    line-height: 80px;
-    text transform: uppercase;
-    width: max-content;
+    line-height: 70px;
+    
 }
 .nav-menu-link{
     padding: 8px 12px;
     border-radius: 3px;
 }
 .nav-menu-link:hover{
+    background: none;
+    color: #034574;    
+}
+.nav-toggle{
+        color: white;
+        background: none;
+        border: none;
+        font-size: 30px;
+        padding: 0 20px;
+        line-height: 60px;
+        display: none;
+        cursor:pointer;
+}
+@media (max-width: 768px){
+        body{
+            background-color: red;
+        }
+}
+.nav-menu-link:hover,
+.nav-menu-link_active{
     background-color: #034574;
     transition: 0.5s;
+}
+.nav-menu_visible{
+
 }
