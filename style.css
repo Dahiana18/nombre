@@ -100,8 +100,8 @@ body{
     }
     .nav-menu-link:hover,
     .nav-menu-link_active{
-        background-color: #607EAA;
-        transition: 0.5s;
+        background-color: none;
+        color: khaki;
     }
     .nav-toggle{
         display: block;
